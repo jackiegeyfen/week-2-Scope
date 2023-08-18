@@ -13,7 +13,25 @@ function returned by recVolume should continue to return the original volume.
 
 ***********************************************************************/
 
-// Your code here
+const recVolume = (height) => {
+  let counter = 0;
+  let product = height;
+  let volume1 = (num) => {
+    if (counter < 2) {
+      counter ++;
+      product *= num;
+    }
+    if (counter === 2) {
+      return product;
+    }
+    return volume1;
+  }
+  return volume1;
+};
+
+let measurements = recVolume(5)
+console.log(measurements(6))
+console.log(measurements(8))
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
