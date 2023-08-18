@@ -6,10 +6,10 @@ separating each incoming ingredient with "and".
 
 ***********************************************************************/
 
-const sandwichMaker = () => {
+const sandwichMaker = (ingredient) => {
   let str = "One sandwich with tomato";
   let newFunction = (ingredient) => {
-    console.log(str += " and " + ingredient);
+    return str += " and " + ingredient;
   }
   return newFunction;
 };
