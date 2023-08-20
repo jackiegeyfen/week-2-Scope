@@ -6,7 +6,7 @@ separating each incoming ingredient with "and".
 
 ***********************************************************************/
 
-const sandwichMaker = (ingredient) => {
+const sandwichMaker = () => {
   let str = "One sandwich with tomato";
   let newFunction = (ingredient) => {
     return str += " and " + ingredient;
